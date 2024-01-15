@@ -81,7 +81,7 @@ const Content = () => {
 	  }
 	}
 
-	const remainingQuestions = questions.length - currentQuestion;
+	const remainingQuestions = currentQuestion+1;
 
 	return (
 		<main>
