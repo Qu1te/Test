@@ -1,0 +1,261 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*-------------------------------------Header-------------------------------------*/
+
+.HeaderConteiner{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(247, 247, 247);
+}
+
+.HeaderContent{
+	width:50%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/*-------------------------------------content-------------------------------------*/
+.container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content{
+	width: 70%;
+	border: 2px solid gainsboro;
+	border-radius: 5px;
+	padding:10px;
+	background-color: white;
+	display: grid;
+	margin-top: 100px;
+	align-items: center;
+}
+
+.timerAndRemains{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.timer{
+	padding: 10px;
+}
+
+.timer b{
+	border: 1px solid rgb(206, 206, 206);
+	background-color: rgb(233, 233, 233);
+	padding: 10px;
+}
+
+.QuestionNo{
+	border: 1px solid rgb(206, 206, 206);
+	background-color: rgb(233, 233, 233);
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img img{
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+}
+
+.Quest{
+	width: 100%;
+	background-color: rgb(248, 248, 248);
+	padding: 10px;
+	padding-left: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	box-shadow: 1px 2px 3px 2px rgb(187, 187, 187);
+	border-radius: 5px;
+}
+
+.choosingAnAnswer{
+	width: 100%;
+	height: 30px;
+	margin-top: 20px;
+	border-bottom: 1px solid rgb(206, 206, 206) ;
+	display: flex;
+	align-items:center;
+	justify-content: left;
+	padding-bottom: 10px;
+}
+
+.choosingAnAnswer p{
+	font-weight: 500;
+}
+
+.answers{
+	width: 100%;
+	border: 2px solid rgb(206, 206, 206) ;
+	margin-top: 10px;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.answers li {
+	list-style: none;
+	border-bottom:1px solid rgb(206, 206, 206) ;	
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-weight: 600;
+}
+
+.answers ol:hover{
+	background-color: rgb(233, 233, 233);
+	cursor: pointer;
+}
+
+.result{
+	width: 70%;
+	align-items: center;
+	width: 70%;
+	border: 2px solid gainsboro;
+	border-radius: 5px;
+	padding:10px;
+	background-color: white;
+	display: grid;
+	margin-top: 200px;
+}
+
+.testResultText{
+	width: 100%;
+	border: 2px solid rgb(206, 206, 206) ;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.testResult{
+	width: 100%;
+	border-bottom: 2px solid rgb(206, 206, 206) ;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.testResult p{
+	font-size: 19px;
+}
+
+.back{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin-top: 10px;
+}
+
+.back button{
+	height: 50px;
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(0, 158, 231);
+	border:1px solid rgb(57, 135, 199);
+	border-radius: 5px;
+	cursor: pointer;
+
+}
+
+.back a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: medium;
+	margin-left: 20px;
+}
+
+.back span{
+	margin-right: 10px;
+}
+
+.back img{
+	width: 20px;
+	height: 20px;
+}
+
+.App{
+	min-width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+@media (max-width:834px){
+	.HeaderContent h1{
+		white-space: nowrap;
+	}
+}
+
+@media (max-width:420px){
+	.HeaderContent h1{
+		font-size: 20px;
+	}
+}
+
+@media (max-width:643px){
+	.timerAndRemains{
+		display: grid;
+		justify-content: left;
+	}
+	.timer{
+		padding: 0;
+		margin-top: 15px;
+	}
+}
+
+@media (max-width:315px){
+	.timerAndRemains{
+		display: grid;
+		justify-content: left;
+	}
+	.timer{
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.timer b{
+		border: 1px solid rgb(206, 206, 206);
+		background-color: rgb(233, 233, 233);
+		display: grid;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.Quest h2{
+		font-size: small;
+	}
+
+	.result{
+		margin-top: 60px;
+	}
+}
+
+
+@media (max-width:375px){
+	.Quest{
+		font-size: small;
+	}
+}
